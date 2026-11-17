@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Plus Jakarta Sans Variable"; font-style: normal; font-display: swap; font-weight: 200 800;
+  src: url("../../node_modules/@fontsource-variable/plus-jakarta-sans/files/plus-jakarta-sans-latin-wght-normal.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Archivo Variable"; font-style: normal; font-display: swap; font-weight: 100 900; font-stretch: 62% 125%;
+  src: url("../../node_modules/@fontsource-variable/archivo/files/archivo-latin-wdth-normal.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Geist Mono"; font-style: normal; font-display: swap; font-weight: 500;
+  src: url("../../node_modules/@fontsource/geist-mono/files/geist-mono-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Geist Mono"; font-style: normal; font-display: swap; font-weight: 600;
+  src: url("../../node_modules/@fontsource/geist-mono/files/geist-mono-latin-600-normal.woff2") format("woff2");
+}

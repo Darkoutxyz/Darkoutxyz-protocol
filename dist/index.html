@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Darkout | Lights out, signal on</title>
+<meta name="description" content="Darkout is a Solana memecoin built around a pocket survival kit for power cuts, with a live market board that never stops.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="brand/logo-256.png">
+<link rel="stylesheet" href="assets/app.css">
+<script type="application/json" id="register">{"chain":{"state":"stated","name":"Solana","network":"mainnet","rpc":"https://solana-rpc.publicnode.com"},"domain":{"state":"stated","value":"darkout.xyz"},"ca":{"state":"absent","value":null},"x":{"state":"stated","url":"https://x.com/Darkoutxyz"},"github":{"state":"absent","url":null},"market":{"state":"stated","boosts":"https://api.dexscreener.com/token-boosts/top/v1","tokens":"https://api.dexscreener.com/tokens/v1/solana/","ownDex":"https://api.dexscreener.com/latest/dex/tokens/","ownPump":"https://frontend-api.pump.fun/coins/","pollMs":60000,"count":10}}</script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="castrip">
+    <div class="wrap castrip__in">
+      <span class="castrip__tag"><span class="dot dot--pulse"></span>$DARKOUT</span>
+      <button type="button" class="ca" data-ca-copy aria-label="Copy contract address">
+        <span class="ca__label">CA</span>
+        <span class="ca__text" data-ca-text>Address pending</span>
+        <span class="ca__act" data-ca-act>Grab</span>
+      </button>
+      <a class="castrip__link" data-link="chart">Chart</a>
+      <a class="pill pill--solid castrip__buy" data-link="buy">Trade now</a>
+    </div>
+  </div>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Darkout home">
+      <img class="logo" src="brand/logo-128.png" width="36" height="36" alt="Darkout logo">
+      <span class="wordmark">Darkout</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#kit">Kit</a><a href="#board">Board</a><a href="#plan">Plan</a><a href="#coin">Coin</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="bar__end">
+      <a class="pill pill--ghost bar__buy" data-link="buy">Buy $DARKOUT</a>
+      <a class="icon-btn" data-link="x" aria-label="Darkout on X" title="X">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a class="icon-btn" data-link="github" aria-label="Darkout on GitHub" title="GitHub">
+        <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="stage hero">
+    <div class="mesh" aria-hidden="true">
+      <i class="mesh__a" data-depth="0.35"></i><i class="mesh__b" data-depth="0.6"></i>
+    </div>
+    <div class="grid-bg" data-depth="0.15" aria-hidden="true"></div>
+    <div class="wrap hero__in">
+      <div class="hero__copy">
+        <div class="eyebrow eyebrow--accent" data-reveal><span class="dot dot--pulse"></span>Solana memecoin &middot; early build &middot; made for dead zones</div>
+        <h1 class="shout hero__h" data-reveal>Lights out.<br><span class="accent">Signal on.</span></h1>
+        <p class="lead" data-reveal>Darkout fuses a loud little coin plus one quiet, stubborn goal: every household should own survival tools that outlast the wall socket. We assemble them piece by piece, openly, while our market board below never blinks.</p>
+        <div class="row-btns" data-reveal>
+          <a class="pill pill--solid pill--lg" href="#plan">Read the plan</a>
+          <a class="pill pill--outline pill--lg" href="#board">Watch the board</a>
+        </div>
+        <div class="cabox" data-reveal>
+          <div class="micro">$DARKOUT address</div>
+          <button type="button" class="cabox__btn" data-ca-copy aria-label="Copy contract address">
+            <span class="cabox__text" data-ca-text>Address pending</span>
+            <span class="ca__act" data-ca-act>Grab</span>
+          </button>
+          <p class="note">Trust nothing pasted by strangers. This slot fills solely upon our announcement.</p>
+        </div>
+      </div>
+      <div class="hero__art" data-depth="0.5">
+        <div class="phone" data-reveal data-spot>
+          <div class="phone__in">
+            <div class="phone__head">
+              <img class="logo" src="brand/logo-128.png" width="32" height="32" alt="">
+              <b>Darkout</b>
+              <span class="tag tag--down">&#9679; No signal</span>
+            </div>
+            <div class="phone__title">Calm hands, clear steps.</div>
+            <div class="phone__tiles">
+              <div class="tile tile--on"><i class="tile__i">&#10022;</i><span>Oracle</span></div>
+              <div class="tile tile--on"><i class="tile__i">&#9678;</i><span>Atlas</span></div>
+              <div class="tile"><i class="tile__i">&#9835;</i><span>Voice</span></div>
+              <div class="tile"><i class="tile__i">&#9728;</i><span>Beam</span></div>
+            </div>
+            <div class="phone__chat">
+              <div class="micro micro--accent">&#10022; Oracle</div>
+              <div class="bubble bubble--q">Candle or phone torch for tonight?</div>
+              <div class="bubble bubble--a">Torch, on low brightness. Open flame near curtains is how a quiet night turns into a loud one.</div>
+              <div class="micro">Replied offline, locally</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="oracle">
+    <div class="stage panel-xl" data-reveal>
+      <div class="grid-bg grid-bg--soft" aria-hidden="true"></div>
+      <div class="split">
+        <div>
+          <div class="eyebrow eyebrow--accent">&#10022; Pocket oracle &middot; design goal</div>
+          <h2 class="shout h-lg">A helper that keeps talking after the router dies</h2>
+          <p class="body-lg">Lights drop, search pages follow, chat windows follow too. Our oracle aims to dwell inside your handset instead: type any worry, receive a brief, sourced reply instantly.</p>
+          <ul class="checks">
+            <li data-reveal><span class="chk">&#10003;</span><div><div class="li-t">Lives in local storage</div><p class="li-p">Fetch it one time over broadband at home. Afterwards each reply is produced internally; nothing you type travels anywhere.</p></div></li>
+            <li data-reveal><span class="chk">&#10003;</span><div><div class="li-t">Shows its homework</div><p class="li-p">Replies are lifted from reviewed safety sheets and name the sheet used. When nothing fits, it admits that rather than bluffing.</p></div></li>
+            <li data-reveal><span class="chk">&#10003;</span><div><div class="li-t">Danger jumps the queue</div><p class="li-p">Hints of injury or leaking gas trigger exactly one instruction first: ring the rescue line.</p></div></li>
+            <li data-reveal><span class="chk">&#10003;</span><div><div class="li-t">Speaks your tongue</div><p class="li-p">Instructions should arrive in multiple languages, each figure preserved exactly.</p></div></li>
+          </ul>
+        </div>
+        <div class="chats">
+          <div class="chat" data-reveal data-spot>
+            <div class="bubble bubble--q">Freezer went quiet ages ago. Safe to eat that ice cream?</div>
+            <div class="bubble bubble--a">Likely no. Packed freezers stay frosty roughly one day if sealed. Items softened then refrozen go straight to rubbish.</div>
+            <div class="micro">Source: frozen food sheet</div>
+          </div>
+          <div class="chat" data-reveal data-spot>
+            <div class="bubble bubble--q">Heat my flat by leaving the oven ajar?</div>
+            <div class="bubble bubble--a">Never. Cookers produce fumes, not safe warmth. Wear layers, seal one room, huddle together.</div>
+            <div class="micro">Source: indoor warmth sheet</div>
+          </div>
+          <p class="note">Sample exchanges that show the intended tone. A compact assistant can slip, so it will always point at its source sheet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="kit">
+    <div class="eyebrow" data-reveal>The toolkit</div>
+    <h2 class="shout h-xl" data-reveal>Six instruments for an unplugged night</h2>
+    <div class="cards">
+      <article class="card" data-reveal data-spot><div class="ico">&#10022;</div><h3>Pocket oracle</h3><p>Straight replies to whatever unfolds nearby, pulled from vetted sheets kept locally.</p></article>
+      <article class="card" data-reveal data-spot><div class="ico">&#9678;</div><h3>Street atlas</h3><p>Save your district beforehand. Once bars vanish, roads, your own dot and nearby clinics remain visible.</p></article>
+      <article class="card" data-reveal data-spot><div class="ico">&#9835;</div><h3>Mesh voice</h3><p>Chat with your people through cellular data until that dies, then jump between neighbouring handsets.</p></article>
+      <article class="card" data-reveal data-spot><div class="ico">&#9651;</div><h3>Triage cards</h3><p>Quick yes-or-no ladder: anybody hurt, just your flat, which food is safe, which fuel is safe.</p></article>
+      <article class="card" data-reveal data-spot><div class="ico">&#9783;</div><h3>Airwaves</h3><p>Attach a tiny receiver onto your handset and tune civic broadcasters, the ones still speaking after everything else falls silent.</p></article>
+      <article class="card" data-reveal data-spot><div class="ico">&#9728;</div><h3>Beam</h3><p>Bright torch, dim crimson night setting, plus flashing distress pattern, display held awake.</p></article>
+    </div>
+    <ol class="steps">
+      <li class="step" data-reveal data-spot><div class="mono accent">01</div><div class="step__t">Load it while lit</div><p>Launch it over home broadband, long before trouble.</p></li>
+      <li class="step" data-reveal data-spot><div class="mono accent">02</div><div class="step__t">Pin it</div><p>A tap adds an icon beside your other apps. Zero storefronts, zero registration.</p></li>
+      <li class="step" data-reveal data-spot><div class="mono accent">03</div><div class="step__t">Pull your pieces</div><p>Fetch oracle plus district atlas together.</p></li>
+      <li class="step" data-reveal data-spot><div class="mono accent">04</div><div class="step__t">Flip airplane mode</div><p>Rehearse for real. Replies still arriving? Preparation complete.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec wrap" id="board">
+    <div class="eyebrow eyebrow--accent" data-reveal><span class="dot dot--pulse"></span>Live market</div>
+    <div class="board__head" data-reveal>
+      <h2 class="shout h-xl">Where Solana attention flows today</h2>
+      <span class="status" id="status" data-state="loading" role="status" aria-live="polite"><span class="dot dot--pulse"></span><span id="status-text">Connecting</span></span>
+    </div>
+    <p class="body-md" data-reveal>Ten heavily promoted Solana tokens pulled off a free screener, renewed each minute while this tab stays visible. Our coin claims row one once its address exists.</p>
+
+    <div class="card ticker" data-reveal aria-label="Market ticker">
+      <div class="marquee" id="marquee" aria-hidden="true"></div>
+    </div>
+
+    <div class="card board" data-reveal>
+      <div class="board__cols" role="row">
+        <span>#</span><span>Token</span><span class="r">Price</span><span class="r">24h</span><span class="r c-vol">Volume</span><span class="r c-liq">Liquidity</span>
+      </div>
+      <div id="rows" role="table" aria-label="Market board"></div>
+      <div class="board__err" id="board-err" hidden>Market source unreachable. Showing the last good snapshot where one exists.</div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="notes">
+    <div class="eyebrow" data-reveal>Field notes</div>
+    <div class="board__head" data-reveal><h2 class="shout h-xl">Small habits that carry a dark evening</h2></div>
+    <div class="cards cards--notes">
+      <article class="card" data-reveal data-spot><span class="tag">Food</span><h3 class="h-sm">No peeking</h3><p>Each opening wastes chill you cannot recover. Choose your items first, then reach.</p></article>
+      <article class="card" data-reveal data-spot><span class="tag">Warmth</span><h3 class="h-sm">Shrink the house</h3><p>Pick one room, hang a blanket over the doorway, gather everyone and every cushion inside it.</p></article>
+      <article class="card" data-reveal data-spot><span class="tag">Air</span><h3 class="h-sm">Engines live outside</h3><p>Generators and camp stoves belong far from windows. Exhaust is odourless and merciless.</p></article>
+      <article class="card" data-reveal data-spot><span class="tag">Water</span><h3 class="h-sm">Fill before it fades</h3><p>Upon first flicker, fill bottles plus the tub. Taps may run dry once pumps lose electricity.</p></article>
+      <article class="card" data-reveal data-spot><span class="tag">Power</span><h3 class="h-sm">Ration the battery</h3><p>Lower brightness, silence alerts, close apps. One healthy battery beats five dying ones.</p></article>
+      <article class="card" data-reveal data-spot><span class="tag">Signal</span><h3 class="h-sm">Agree a meeting spot</h3><p>Choose some corner reachable walking, so a mute handset never equals a missing person.</p></article>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="card panel-xl panel-xl--flush" data-reveal>
+      <div class="split split--rules">
+        <div>
+          <div class="eyebrow">House rules</div>
+          <h2 class="shout h-rules">Claims come with proof</h2>
+          <p class="body-md">A page about trust should behave like it. Four rules govern everything you read here.</p>
+        </div>
+        <div class="rules">
+          <div class="rule" data-reveal data-spot><div class="mono accent">01</div><div class="step__t">No address, no link</div><p>Trade and chart buttons stay lifeless until an address is published. Unknown facts appear as unknown.</p></div>
+          <div class="rule" data-reveal data-spot><div class="mono accent">02</div><div class="step__t">The board is neutral</div><p>Market rows arrive via a free feed and ignore our coin entirely. Ours merely sits pinned above them.</p></div>
+          <div class="rule" data-reveal data-spot><div class="mono accent">03</div><div class="step__t">Coins are coins</div><p>Darkout ranks as memecoin. Nothing displayed here is guidance, prediction, or pledge.</p></div>
+          <div class="rule" data-reveal data-spot><div class="mono accent">04</div><div class="step__t">Plans are plans</div><p>Construction continues. Roadmap entries are intentions, labelled accordingly, never finished deliverables.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="plan">
+    <div class="eyebrow" data-reveal>Roadmap</div>
+    <h2 class="shout h-xl" data-reveal>Four stages, one direction</h2>
+    <p class="body-md" data-reveal>Cheapest useful piece first, extra reach afterwards. Stage one gets our attention; later stages follow once earlier ones hold.</p>
+    <ol class="road">
+      <li class="card road__i road__i--on" data-reveal data-spot><div class="mono accent">Stage 1 &middot; Building</div><div class="step__t">Pocket web kit</div><p>Oracle, atlas, triage ladder, beam, airwaves, all executing inside any handset or laptop browser.</p></li>
+      <li class="card road__i" data-reveal data-spot><div class="mono accent">Stage 2 &middot; Queued</div><div class="step__t">Native handset app</div><p>Installable software passing text and speech between neighbouring handsets via nearby radio links, display dark included.</p></li>
+      <li class="card road__i" data-reveal data-spot><div class="mono accent">Stage 3 &middot; Queued</div><div class="step__t">Wide-area units</div><p>Compact transmitters linking to our software, stretching a text over entire metropolitan areas.</p></li>
+      <li class="card road__i" data-reveal data-spot><div class="mono accent">Stage 4 &middot; Queued</div><div class="step__t">Relief wallet</div><p>Open treasury buying radios plus kits for struggling regions; every payment traceable by anyone.</p></li>
+    </ol>
+
+    <h3 class="h-md" data-reveal>Reach, stage by stage</h3>
+    <div class="tablewrap" data-reveal>
+      <table class="cmp">
+        <thead><tr><th>Question</th><th>Web kit</th><th>Handset app</th><th>Transmitter units</th></tr></thead>
+        <tbody>
+          <tr><td>Range without any network</td><td>Handsets sharing one hotspot cover roughly one storey or alley.</td><td>Direct radio hops between handsets, tens of metres apiece.</td><td>Multiple kilometres between transmitters.</td></tr>
+          <tr><td>Contacting distant friends</td><td>Works solely while somebody along the route retains data.</td><td>Identical, though routes stretch across more handsets.</td><td>Yes, up to where transmitters end.</td></tr>
+          <tr><td>Initial setup</td><td>Each handset scans one code.</td><td>Installed handsets find one another automatically.</td><td>Link every transmitter with our software once.</td></tr>
+          <tr><td>Handset asleep, stowed away</td><td>Browser tab must remain awake.</td><td>Continues passing messages quietly.</td><td>Transmitter forwards autonomously.</td></tr>
+          <tr><td>Nobody in range</td><td>Texts queue inside your handset.</td><td>Handsets ferry texts until some path opens.</td><td>Identical, handled by transmitters.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note note--pad">All of this is intention only. Short radio hops need plenty of neighbours running our software.</p>
+  </section>
+
+  <section class="sec wrap" id="coin">
+    <div class="stage panel-xl panel-xl--coin" data-reveal>
+      <div class="grid-bg grid-bg--soft" aria-hidden="true"></div>
+      <div class="split split--coin">
+        <div>
+          <div class="eyebrow eyebrow--accent">Token</div>
+          <h2 class="shout h-coin">$DARKOUT</h2>
+          <p class="body-md">Solana memecoin bankrolling hosting, software, transmitters and relief treasury. Think prank with purpose, not investment. Anticipate zero returns.</p>
+          <div class="row-btns">
+            <a class="pill pill--solid pill--lg" data-link="buy">Trade now</a>
+            <a class="pill pill--outline pill--lg" data-link="solscan">Solscan &#8599;</a>
+            <a class="pill pill--outline pill--lg" data-link="chart">Chart &#8599;</a>
+          </div>
+        </div>
+        <div class="cabox cabox--card">
+          <div class="micro">Address</div>
+          <button type="button" class="cabox__btn" data-ca-copy aria-label="Copy contract address">
+            <span class="cabox__text" data-ca-text>Address pending</span>
+            <span class="ca__act" data-ca-act>Grab</span>
+          </button>
+          <p class="note">Refuse wallet requests from strangers messaging first. Ours never arrive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap wrap--narrow" id="faq">
+    <div class="eyebrow center" data-reveal>FAQ</div>
+    <h2 class="shout h-xl center" data-reveal>Straight answers</h2>
+    <div class="faq">
+      <details class="card" data-reveal><summary>Is anything usable today?<i class="plus"></i></summary><p>Partly at best. Stage one remains under construction, and this page tracks progress candidly. Roadmap labels separate building from merely queued.</p></details>
+      <details class="card" data-reveal><summary>Why attach a coin?<i class="plus"></i></summary><p>Hosting, cartography and transmitters cost cash. A coin supplies community plus treasury, free of advertising or subscriptions.</p></details>
+      <details class="card" data-reveal><summary>Which address is real?<i class="plus"></i></summary><p>Unannounced. The top slot stays blank and every trade link stays lifeless until we publish one. Anybody offering a different string is guessing.</p></details>
+      <details class="card" data-reveal><summary>What do those rows display?<i class="plus"></i></summary><p>Live rows for ten heavily promoted Solana tokens pulled off a free screener. Context only, never endorsement, unaffected by whatever we hold.</p></details>
+      <details class="card" data-reveal><summary>Could assistants function offline?<i class="plus"></i></summary><p>Design target, yes: a compact model plus vetted reference sheets stored locally, so nothing leaves your handset. Quality gets tested openly before any claim.</p></details>
+      <details class="card" data-reveal><summary>How do texts hop between handsets?<i class="plus"></i></summary><p>Every handset running our software passes texts to whichever neighbour sits within radio reach, repeating until the destination appears, otherwise waiting for better paths.</p></details>
+      <details class="card" data-reveal><summary>Is this financial advice?<i class="plus"></i></summary><p>Negative. Darkout ranks as memecoin. Prices swing violently, possibly reaching zero. Risk only sums you could lose without worry.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div>
+      <a class="brand" href="#top"><img class="logo" src="brand/logo-128.png" width="36" height="36" alt="Darkout logo"><span class="wordmark">Darkout</span></a>
+      <p class="note foot__blurb">Survival gear for power cuts, bankrolled via Solana memecoin. Zero guidance, zero guarantees. darkout.xyz</p>
+    </div>
+    <div><div class="eyebrow foot__h">Explore</div><ul><li><a href="#kit">Toolkit</a></li><li><a href="#board">Market board</a></li><li><a href="#plan">Roadmap</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+    <div><div class="eyebrow foot__h">Community</div><ul><li><a data-link="x" data-handle>X</a></li><li><a data-link="github">GitHub</a></li><li><a data-link="solscan">Solscan</a></li><li><a data-link="chart">Chart</a></li></ul></div>
+  </div>
+</footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

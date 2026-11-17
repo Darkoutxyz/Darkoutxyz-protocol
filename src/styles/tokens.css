@@ -1,0 +1,57 @@
+/*
+  TOKENS - the only file in src/ that may contain colour literals.
+
+  Provenance (tools/assets.py, measured from the pixels, not invented):
+    --src-yellow  #fad822  median of fully opaque lit-window pixels in brand/LOGO DARKOUT PNG...png (RGBA, IHDR colortype 6, 149,829 px sampled)
+    --src-slate   #2f3845  median of fully opaque tower-body pixels, same file (135,892 px sampled)
+    --src-ground  #000000  median of background pixels in reference/SAMPUL DARKOUT JPG.jpg.jpeg (the logo PNG has 3,601,011 transparent pure-black px, same ground)
+    --src-white   #fefefe  median of the lettering pixels (min channel > 235) in the same banner
+  Supplied by the brief (not sampled):
+    --src-mint    #00ffcc  own-token pulse colour, specified verbatim
+  Every other colour below is a color-mix() of the five above.
+*/
+:root {
+  --src-yellow: #fad822;
+  --src-slate: #2f3845;
+  --src-ground: #000000;
+  --src-white: #fefefe;
+  --src-mint: #00ffcc;
+
+  --color-accent: var(--src-yellow);
+  --color-mint: var(--src-mint);
+  --color-ink: var(--src-ground);
+  --color-fg: var(--src-white);
+  --color-panel: color-mix(in srgb, var(--src-slate) 14%, var(--src-ground));
+  --color-panel2: color-mix(in srgb, var(--src-slate) 30%, var(--src-ground));
+  --color-raised: color-mix(in srgb, var(--src-slate) 20%, var(--src-ground));
+  --color-line: color-mix(in srgb, var(--src-slate) 55%, var(--src-ground));
+  --color-edge: var(--src-slate);
+  --color-soft: color-mix(in srgb, var(--src-white) 78%, var(--src-ground));
+  --color-mute: color-mix(in srgb, var(--src-white) 56%, var(--src-ground));
+  --color-dim: color-mix(in srgb, var(--src-white) 40%, var(--src-ground));
+  --color-accent-hi: color-mix(in srgb, var(--src-yellow) 82%, var(--src-white));
+  --color-accent-soft: color-mix(in srgb, var(--src-yellow) 13%, var(--src-ground));
+  --color-accent-line: color-mix(in srgb, var(--src-yellow) 42%, var(--src-ground));
+  --color-on-accent: var(--src-ground);
+  --color-up: var(--src-mint);
+  --color-down: var(--src-yellow);
+  --color-glow: color-mix(in srgb, var(--src-yellow) 13%, transparent);
+  --color-glow-cool: color-mix(in srgb, var(--src-slate) 40%, transparent);
+  --color-grid: color-mix(in srgb, var(--src-white) 4%, transparent);
+  --color-spot: color-mix(in srgb, var(--src-yellow) 10%, transparent);
+  --color-mint-glow: color-mix(in srgb, var(--src-mint) 32%, transparent);
+  --color-mint-soft: color-mix(in srgb, var(--src-mint) 7%, var(--src-ground));
+  --color-scrim: color-mix(in srgb, var(--src-ground) 80%, transparent);
+  --color-shadow: color-mix(in srgb, var(--src-ground) 70%, transparent);
+
+  /* radius scale measured from the reference stylesheet (px) */
+  --r-4: 4px; --r-6: 6px; --r-8: 8px; --r-12: 12px; --r-16: 16px; --r-20: 20px; --r-24: 24px; --r-28: 28px;
+  --r-phone: 44px; --r-phone-in: 34px; --r-logo: 22%; --r-pill: 9999px;
+
+  /* motion */
+  --ease: cubic-bezier(.4, 0, .2, 1);
+  --t-fast: 150ms;
+  --font-sans: "Plus Jakarta Sans Variable", -apple-system, BlinkMacSystemFont, "Helvetica Neue", system-ui, sans-serif;
+  --font-shout: "Archivo Variable", "Arial Black", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}

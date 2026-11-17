@@ -1,0 +1,16 @@
+{
+  "chain": { "state": "stated", "name": "Solana", "network": "mainnet", "rpc": "https://solana-rpc.publicnode.com" },
+  "domain": { "state": "stated", "value": "darkout.xyz" },
+  "ca": { "state": "absent", "value": null },
+  "x": { "state": "stated", "url": "https://x.com/Darkoutxyz" },
+  "github": { "state": "absent", "url": null },
+  "market": {
+    "state": "stated",
+    "boosts": "https://api.dexscreener.com/token-boosts/top/v1",
+    "tokens": "https://api.dexscreener.com/tokens/v1/solana/",
+    "ownDex": "https://api.dexscreener.com/latest/dex/tokens/",
+    "ownPump": "https://frontend-api.pump.fun/coins/",
+    "pollMs": 60000,
+    "count": 10
+  }
+}
